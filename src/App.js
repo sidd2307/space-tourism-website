@@ -1,15 +1,13 @@
 import './App.css';
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './pages/Home';
 function App() {
   return (
-    <div>
-      <div className='font-Bellefair text-2xl'>
-        lorem ipsum dolor sit amet
-      </div>
-      <div className='font-Berlow text-2xl'>
-        Hlorem ipsum dolor sit amet
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
