@@ -1,9 +1,10 @@
 import React from "react";
+import NavBar from "../components/NavBar";
 
 export default function Home() {
   return (
-    <div className="bg-mobile sm:bg-tablet lg:bg-desktop h-screen bg-no-repeat bg-cover">
-      Home
+    <div className="bg-tablet desktop:bg-desktop h-screen bg-no-repeat bg-cover">
+      <NavBar />
     </div>
   );
 }
