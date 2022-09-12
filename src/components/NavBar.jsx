@@ -29,7 +29,7 @@ export default function NavBar() {
                 <a
                   key={node}
                   href="/"
-                  className="text-white font-Berlow text-xl font-thin py-2 px-4 hover:border-b-[4px] hover:border-white"
+                  className="text-white font-Berlow text-xl font-thin py-2 px-4 border-b-[4px] border-transparent hover:border-white"
                 >
                   {node}
                 </a>
