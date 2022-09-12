@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/shared/logo.svg";
 import "./NavBar.css";
 
@@ -6,7 +7,6 @@ export default function NavBar() {
   const [isMenuClosed, setMenuClosed] = useState(true);
   const links = ["00 HOME", "01 DESTINATION", "02 CREW", "03 TECHNOLOGY"];
   const links2 = ["HOME", "DESTINATION", "CREW", "TECHNOLOGY"];
-  // console.log(window.innerWidth);
   const wid = window.innerWidth;
 
   return (
@@ -24,31 +24,57 @@ export default function NavBar() {
         {wid > 980 && console.log("first")}
         {wid > 980 ? (
           <div className="nav-links">
-            {links.map((node) => {
-              return (
-                <a
-                  key={node}
-                  href="/"
-                  className="text-white font-Berlow text-xl font-thin py-2 px-4 border-b-[4px] border-transparent hover:border-white"
-                >
-                  {node}
-                </a>
-              );
-            })}
+            <Link
+              to="/"
+              className="text-white font-Berlow text-xl font-thin py-2 px-4 border-b-[4px] border-transparent hover:border-white"
+            >
+              00 HOME
+            </Link>
+            <Link
+              to="/destination"
+              className="text-white font-Berlow text-xl font-thin py-2 px-4 border-b-[4px] border-transparent hover:border-white"
+            >
+              01 DESTINATION
+            </Link>
+            <Link
+              to="/"
+              className="text-white font-Berlow text-xl font-thin py-2 px-4 border-b-[4px] border-transparent hover:border-white"
+            >
+              02 CREW
+            </Link>
+            <Link
+              to="/"
+              className="text-white font-Berlow text-xl font-thin py-2 px-4 border-b-[4px] border-transparent hover:border-white"
+            >
+              03 TECHNOLOGY
+            </Link>
           </div>
         ) : (
           <div className="nav-links">
-            {links2.map((node) => {
-              return (
-                <a
-                  key={node}
-                  href="/"
-                  className="text-white font-Berlow text-xl font-thin py-2 px-4 hover:border-b-[4px] hover:border-white"
-                >
-                  {node}
-                </a>
-              );
-            })}
+            <Link
+              to="/"
+              className="text-white font-Berlow text-xl font-thin py-2 px-4 border-b-[4px] border-transparent hover:border-white"
+            >
+              HOME
+            </Link>
+            <Link
+              to="/destination"
+              className="text-white font-Berlow text-xl font-thin py-2 px-4 border-b-[4px] border-transparent hover:border-white"
+            >
+              DESTINATION
+            </Link>
+            <Link
+              to="/"
+              className="text-white font-Berlow text-xl font-thin py-2 px-4 border-b-[4px] border-transparent hover:border-white"
+            >
+              CREW
+            </Link>
+            <Link
+              to="/"
+              className="text-white font-Berlow text-xl font-thin py-2 px-4 border-b-[4px] border-transparent hover:border-white"
+            >
+              TECHNOLOGY
+            </Link>
           </div>
         )}
       </nav>
@@ -65,18 +91,38 @@ export default function NavBar() {
 
           <div className="overlay-menu-wrapper">
             <div className="overlay-menu">
-              {links.map((node) => {
-                return (
-                  <a
-                    key={node}
-                    onClick={() => setMenuClosed(!isMenuClosed)}
-                    className="overlay-menu-item"
-                    style={{ color: "white", width: 150, fontSize: 20 }}
-                  >
-                    <span className="font-Berlow">{node}</span>
-                  </a>
-                );
-              })}
+              <a
+                href="/"
+                onClick={() => setMenuClosed(!isMenuClosed)}
+                className="overlay-menu-item"
+                style={{ color: "white", width: 150, fontSize: 20 }}
+              >
+                <span className="font-Berlow">HOME</span>
+              </a>
+              <a
+                href="/destination"
+                onClick={() => setMenuClosed(!isMenuClosed)}
+                className="overlay-menu-item"
+                style={{ color: "white", width: 150, fontSize: 20 }}
+              >
+                <span className="font-Berlow">DESTINATION</span>
+              </a>
+              <a
+                href="/"
+                onClick={() => setMenuClosed(!isMenuClosed)}
+                className="overlay-menu-item"
+                style={{ color: "white", width: 150, fontSize: 20 }}
+              >
+                <span className="font-Berlow">CREW</span>
+              </a>
+              <a
+                href="/"
+                onClick={() => setMenuClosed(!isMenuClosed)}
+                className="overlay-menu-item"
+                style={{ color: "white", width: 150, fontSize: 20 }}
+              >
+                <span className="font-Berlow">TECHNOLOGY</span>
+              </a>
 
               <div>
                 {/* <a href="/" className="text-white text-base py-2 px-4">
