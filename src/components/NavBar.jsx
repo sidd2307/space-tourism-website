@@ -97,7 +97,7 @@ export default function NavBar() {
                 className="overlay-menu-item"
                 style={{ color: "white", width: 150, fontSize: 20 }}
               >
-                <span className="font-Berlow">HOME</span>
+                <span className="font-Berlow">00 HOME</span>
               </a>
               <a
                 href="/destination"
@@ -105,7 +105,7 @@ export default function NavBar() {
                 className="overlay-menu-item"
                 style={{ color: "white", width: 150, fontSize: 20 }}
               >
-                <span className="font-Berlow">DESTINATION</span>
+                <span className="font-Berlow">01 DESTINATION</span>
               </a>
               <a
                 href="/"
@@ -113,7 +113,7 @@ export default function NavBar() {
                 className="overlay-menu-item"
                 style={{ color: "white", width: 150, fontSize: 20 }}
               >
-                <span className="font-Berlow">CREW</span>
+                <span className="font-Berlow">02 CREW</span>
               </a>
               <a
                 href="/"
@@ -121,7 +121,7 @@ export default function NavBar() {
                 className="overlay-menu-item"
                 style={{ color: "white", width: 150, fontSize: 20 }}
               >
-                <span className="font-Berlow">TECHNOLOGY</span>
+                <span className="font-Berlow">03 TECHNOLOGY</span>
               </a>
 
               <div>
