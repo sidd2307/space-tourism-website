@@ -38,6 +38,13 @@ export default function Crew() {
       <NavBar />
       <div className="flex flex-col-reverse desktop:flex-row w-[80%] mx-auto h-[80%] mt-auto mb-auto justify-between">
         <div className="flex flex-col w-[90%] mobile:w-[70%] desktop:w-[40%] mx-auto desktop:mx-0 h-96 my-auto justify-between">
+          {/* section name */}
+          <div className="w-[80%] mobile:w-[70%] desktop:w-[100%] my-auto mx-auto desktop:mx-0 desktop:my-0 flex flex-col">
+            <div className="mb-10 w-[100%] font-Berlow text-base text-center desktop:text-left desktop:text-3xl text-white font-thin tracking-widest">
+              <span className="mr-3 text-gray-600 font-semibold">02</span>MEET
+              YOUR CREW
+            </div>
+          </div>
           <span className="w-[50%] mobile:w-[50%] desktop:w-[30%] flex desktop:hidden flex-row justify-between mx-auto">
             <div
               onClick={() => setselecteddest("anousheh")}

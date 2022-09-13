@@ -43,8 +43,8 @@ export default function Destination() {
       <div className="flex flex-col desktop:flex-row w-[80%] mx-auto h-[80%] mt-auto mb-auto justify-between">
         <div className="w-[80%] mobile:w-[70%] desktop:w-[40%] my-auto mx-auto desktop:mx-0 py-8 flex flex-col">
           <div className="mb-10 w-[100%] font-Berlow text-base text-center desktop:text-left desktop:text-3xl text-white font-thin tracking-widest">
-            <span className="mr-3 text-gray-600 font-semibold">01</span>Pick
-            your destination
+            <span className="mr-3 text-gray-600 font-semibold">01</span>PICK
+            YOUR DESTINATION
           </div>
           <img src={data[selecteddest].img} alt="" />
         </div>
