@@ -37,7 +37,7 @@ export default function NavBar() {
               01 DESTINATION
             </Link>
             <Link
-              to="/"
+              to="/crew"
               className="text-white font-Berlow text-xl font-thin py-2 px-4 border-b-[4px] border-transparent hover:border-white"
             >
               02 CREW
@@ -64,7 +64,7 @@ export default function NavBar() {
               DESTINATION
             </Link>
             <Link
-              to="/"
+              to="/crew"
               className="text-white font-Berlow text-xl font-thin py-2 px-4 border-b-[4px] border-transparent hover:border-white"
             >
               CREW
@@ -108,7 +108,7 @@ export default function NavBar() {
                 <span className="font-Berlow">01 DESTINATION</span>
               </a>
               <a
-                href="/"
+                href="/crew"
                 onClick={() => setMenuClosed(!isMenuClosed)}
                 className="overlay-menu-item"
                 style={{ color: "white", width: 150, fontSize: 20 }}

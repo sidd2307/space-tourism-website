@@ -16,6 +16,9 @@ module.exports = {
         "mobiledest": "url('/src/assets/destination/background-destination-mobile.jpg')",
         "tabletdest": "url('/src/assets/destination/background-destination-tablet.jpg')",
         "desktopdest": "url('/src/assets/destination/background-destination-desktop.jpg')",
+        "mobilecrew": "url('/src/assets/crew/background-crew-mobile.jpg')",
+        "tabletcrew": "url('/src/assets/crew/background-crew-tablet.jpg')",
+        "desktopcrew": "url('/src/assets/crew/background-crew-desktop.jpg')",
       },
     },
     screens: {
