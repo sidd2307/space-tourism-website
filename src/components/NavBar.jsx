@@ -12,9 +12,9 @@ export default function NavBar() {
   return (
     <div className="text-white flex font-Rubik">
       <nav className="w-[100%] sm:w-[90%] ml-auto mr-auto mt-8 backdrop-blur-xl pl-8">
-        <div className="text-lg bold">
+        <Link to="/" className="text-lg bold">
           <img src={logo} alt="" />
-        </div>
+        </Link>
         <div
           className="nav-hamburguer-icon"
           onClick={() => setMenuClosed(!isMenuClosed)}
@@ -43,7 +43,7 @@ export default function NavBar() {
               02 CREW
             </Link>
             <Link
-              to="/"
+              to="/technology"
               className="text-white font-Berlow text-xl font-thin py-2 px-4 border-b-[4px] border-transparent hover:border-white"
             >
               03 TECHNOLOGY
@@ -70,7 +70,7 @@ export default function NavBar() {
               CREW
             </Link>
             <Link
-              to="/"
+              to="/technology"
               className="text-white font-Berlow text-xl font-thin py-2 px-4 border-b-[4px] border-transparent hover:border-white"
             >
               TECHNOLOGY
@@ -91,38 +91,38 @@ export default function NavBar() {
 
           <div className="overlay-menu-wrapper">
             <div className="overlay-menu">
-              <a
-                href="/"
+              <Link
+                to="/"
                 onClick={() => setMenuClosed(!isMenuClosed)}
                 className="overlay-menu-item"
                 style={{ color: "white", width: 150, fontSize: 20 }}
               >
                 <span className="font-Berlow">00 HOME</span>
-              </a>
-              <a
-                href="/destination"
+              </Link>
+              <Link
+                to="/destination"
                 onClick={() => setMenuClosed(!isMenuClosed)}
                 className="overlay-menu-item"
                 style={{ color: "white", width: 150, fontSize: 20 }}
               >
                 <span className="font-Berlow">01 DESTINATION</span>
-              </a>
-              <a
-                href="/crew"
+              </Link>
+              <Link
+                to="/crew"
                 onClick={() => setMenuClosed(!isMenuClosed)}
                 className="overlay-menu-item"
                 style={{ color: "white", width: 150, fontSize: 20 }}
               >
                 <span className="font-Berlow">02 CREW</span>
-              </a>
-              <a
-                href="/"
+              </Link>
+              <Link
+                to="/technology"
                 onClick={() => setMenuClosed(!isMenuClosed)}
                 className="overlay-menu-item"
                 style={{ color: "white", width: 150, fontSize: 20 }}
               >
                 <span className="font-Berlow">03 TECHNOLOGY</span>
-              </a>
+              </Link>
 
               <div>
                 {/* <a href="/" className="text-white text-base py-2 px-4">

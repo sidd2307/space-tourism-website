@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      dropShadow: {
+        '3xl': '0 70px 70px white',
+      },
       fontFamily: {
         Bellefair: ["Bellefair", "serif"],
         Berlow: ["Roboto Condensed", "sans-serif"],
@@ -19,6 +22,9 @@ module.exports = {
         "mobilecrew": "url('/src/assets/crew/background-crew-mobile.jpg')",
         "tabletcrew": "url('/src/assets/crew/background-crew-tablet.jpg')",
         "desktopcrew": "url('/src/assets/crew/background-crew-desktop.jpg')",
+        "mobiletechnology": "url('/src/assets/technology/background-technology-mobile.jpg')",
+        "tablettechnology": "url('/src/assets/technology/background-technology-tablet.jpg')",
+        "desktoptechnology": "url('/src/assets/technology/background-technology-desktop.jpg')",
       },
     },
     screens: {

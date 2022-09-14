@@ -21,7 +21,7 @@ export default function Home() {
             world experience!
           </span>
         </div>
-        <div className="h-[150px] w-[150px] px-[25px] py-[60px] mobile:h-[274px] mobile:w-[274px] rounded-full bg-white mobile:px-[60px] mobile:py-[120px] mx-auto desktop:mx-0 my-auto">
+        <div className="h-[150px] w-[150px] px-[25px] py-[60px] mobile:h-[274px] mobile:w-[274px] rounded-full bg-white mobile:px-[60px] mobile:py-[120px] mx-auto desktop:mx-0 my-auto hover:drop-shadow-3xl cursor-pointer">
           <span className="font-Bellefair text-xl mobile:text-3xl text-[#0B0D17] font-thin tracking-widest">
             EXPLORE
           </span>
